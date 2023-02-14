@@ -9,6 +9,8 @@
     text-decoration: none;
  }
 
+
+
  body {
     font-family: 'Roboto', sans-serif;
 
@@ -62,4 +64,45 @@
  nav > a:hover {
     transform:translateY(40px);
     transition: transform 1.4s ease;
+ }
+
+
+ .intro-left-side {
+   height: 300px;
+ 
+
+   flex-basis: 40%;
+ }
+
+ .intro-left-side h1 {
+   font-size: 4.5rem;
+   font-weight: 700;
+ }
+
+
+ .intro-left-side h1 span {
+   color: #FF8A56;
+
+ }
+ .intro-right-side {
+
+   height: 595px;
+   flex:1;
+
+   display: flex;
+   justify-content: flex-end;
+
+
+ }
+
+ .intro-right-side img {
+   /* width: 100%; */
+   height: 100%;
+ }
+
+
+
+ .introduction {
+   display: flex;
+   align-items: center;
  }
