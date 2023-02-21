@@ -176,3 +176,41 @@ margin-right: 10px;
 }
 
 
+/* TRUSTED BY SECTION START */
+
+.trusted-by {
+   display: flex;
+   flex-direction: column;
+   
+
+}
+
+.trusted-by h6 {
+   text-align: center;
+}
+
+
+.companies {
+   display: flex;
+   justify-content: space-around;
+   padding: 77px;
+}
+
+
+
+@media(max-width:768px) {
+   /* pseudo elementler */
+
+   .company:nth-child(even) {
+     display: none;
+   }
+
+}
+
+
+@media(max-width:576px) {
+   .company:not(:first-child) {
+      display: none;
+   }
+}
+/* TRUSTED BY SECTION END */
