@@ -214,3 +214,39 @@ margin-right: 10px;
    }
 }
 /* TRUSTED BY SECTION END */
+
+
+/* SERVICES SECTION START */
+
+.services {
+   padding: 30px 171px;
+   display: flex;
+   flex-direction: column;
+}
+
+.services h6 {
+   color: #FF5E69;
+   text-transform: uppercase;
+   text-align: center;
+
+}
+
+.services h1 {
+   font-size: 54px;
+   text-align: center;
+   margin: 20px 195px;
+   font-weight: 700;
+}
+
+.services ul {
+   list-style-type: square;
+   list-style-position: inside;
+
+  
+}
+
+.services-cards {
+   display: flex;
+}
+
+/* SERVICES SECTION END */
