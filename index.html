@@ -9,6 +9,18 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="overlay">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="nav-links">
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Projects</a>
+            <a href="">Blog</a>
+            <a href="">Book a call</a>
+            <a href=""><img src="./assets/images/right-arrow.svg" alt=""></a>
+        </div>
+    </div>
     
     <header class="header-hissesi">
         <div class="logo">
@@ -123,7 +135,15 @@
     </section>
 
 
- 
+ <script>
+    document.querySelector('.fa-bars').onclick = function() {
+        document.querySelector('.overlay').classList.add('active')
+    }
+
+    document.querySelector('.fa-xmark').onclick = function() {
+        document.querySelector('.overlay').classList.remove('active')
+    }
+ </script>
 
 
 </body>

@@ -18,6 +18,61 @@
 
  }
 
+/* OVERLAY MENYUNUN YARADILMASI START */
+
+.overlay {
+   background-color: rgba(0,0,0,.9);
+   height: 100vh;
+   position: fixed;
+   width: 0;
+   overflow-x:hidden;
+   transition: width 1.8s ease;
+
+  
+}
+
+
+.active {
+   width: 100%;
+}
+
+.overlay > .nav-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+   height: 100%;
+}
+
+.overlay > .nav-links > a {
+   color: #666;
+   font-size: 38px;
+   margin-bottom: 20px;
+   transition:  2s ease;
+} 
+
+.overlay > .nav-links > a:hover {
+   color:#fff;
+   transform: translateX(100px);
+}
+
+
+.fa-xmark {
+   color:#fff;
+   font-size: 48px;
+
+   position: absolute;
+ 
+
+  right: 3%;
+  top: 4%;
+  cursor: pointer;
+}
+
+
+/* OVERLAY MENYUNUN YARADILMASI END */
+
  .fa-bars {
     display: none;
  }
@@ -77,6 +132,8 @@
 
 
 }
+
+
 
 
 
@@ -247,6 +304,53 @@ margin-right: 10px;
 
 .services-cards {
    display: flex;
+   margin: 40px 0;
+   flex-wrap: wrap;
+   justify-content: center;
+
 }
 
+.services-cards li {
+   margin: 0 !important;
+}
+
+
+.service-card {
+   margin-right: 10px;
+   min-width: 306px;
+   padding: 20px 0;
+ 
+}
+
+
+.service-card > h3 {
+   font-weight: 700;
+   font-size: 24px;
+}
+
+ .service-card p {
+   font-weight: 100;
+   color:#666;
+   font-size: 16px;
+   margin-top: 25px;
+   margin-bottom: 21px;
+ }
+
+
+ @media(max-width:1210px){
+   .services {
+      padding: 30px 0;
+   }
+
+   .services > h1 {
+      margin: 20px;
+   }
+
+   .service-card {
+      /* text-align: center; */
+      margin-bottom: 20px;
+      box-shadow:7px 7px 20px 0px rgb(0 0 0 / 80%);   
+      padding: 80px 40px;
+   }
+ }
 /* SERVICES SECTION END */
